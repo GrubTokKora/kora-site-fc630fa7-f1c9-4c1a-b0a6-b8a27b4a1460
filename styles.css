@@ -287,7 +287,7 @@ a {
   justify-items: center;
   text-align: center;
   background:
-    linear-gradient(180deg, rgba(34, 20, 15, 0.38), rgba(34, 20, 15, 0.54)),
+    linear-gradient(180deg, rgba(34, 20, 15, 0.2), rgba(34, 20, 15, 0.32)),
     url("https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/fc630fa7-f1c9-4c1a-b0a6-b8a27b4a1460/de8c94d8-887e-4625-825f-ec262dbc28df/1775051487_ry5ekg.jpeg") center center / cover no-repeat;
 }
 
@@ -350,15 +350,17 @@ li {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at center, rgba(0, 0, 0, 0.04), transparent 35%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.42) 100%);
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.02), transparent 40%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.10) 100%);
 }
 
 .hero-home h1,
 .hero-home .hero-lead,
 .hero-home .hero-eyebrow {
   color: #fff8f1;
-  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.45),
+    0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
 .hero-home h1 em {
