@@ -842,9 +842,33 @@ li {
     transform: none;
   }
 
+  .nav-dropdown:hover .dropdown-menu,
+  .nav-dropdown:focus-within .dropdown-menu {
+    left: auto;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
   .dropdown-menu a {
+    display: block;
+    width: fit-content;
     padding: 6px 0;
     text-align: left;
+    background: transparent;
+    border-radius: 0;
+    text-decoration: none;
+  }
+
+  .dropdown-menu a::after {
+    display: none;
+  }
+
+  .dropdown-menu a:hover,
+  .dropdown-menu a:focus-visible {
+    background: transparent;
+    color: var(--tomato-deep);
+    text-decoration: none;
   }
 
   .site-header.is-open .site-nav,
