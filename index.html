@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister V's Pizza Bar – Modern Italian Restaurant in Elmsford, NY</title>
+    <meta name="description" content="Mister V's Pizza Bar offers a diverse menu featuring classic and gourmet pizzas, Italian-American appetizers, salads, pasta dishes, and desserts, complemented by a full bar.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mister V's Pizza Bar – Modern Italian Restaurant in Elmsford, NY">
+    <meta property="og:description" content="Mister V's Pizza Bar offers a diverse menu featuring classic and gourmet pizzas, Italian-American appetizers, salads, pasta dishes, and desserts, complemented by a full bar.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/d6c5b930-145e-46df-b0c2-14fc57f17096/Screen+Shot+2025-12-03+at+11.09.46+AM.png">
+    <meta property="og:url" content="https://www.mistervspizzabar.com/">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.mistervspizzabar.com/">
+
+    <!-- Hero image preload -->
+    <link rel="preload" as="image" href="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/d6c5b930-145e-46df-b0c2-14fc57f17096/Screen+Shot+2025-12-03+at+11.09.46+AM.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Mister V's Pizza Bar",
+      "description": "Mister V’s Pizza Bar is a modern Italian restaurant offering pizza, pasta, and classic dishes in a lively, welcoming atmosphere. The menu balances tradition and innovation, with a focus on fresh creations.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "444 Saw Mill River Road",
+        "addressLocality": "Elmsford",
+        "addressRegion": "NY",
+        "postalCode": "10523",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-914-592-2118",
+      "servesCuisine": ["Italian", "Pizza"],
+      "openingHours": [
+        "Mo-Th 10:00-20:00",
+        "Fr 10:00-21:00",
+        "Sa 11:00-16:00"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/05356a7d-2dd3-4ba5-9645-69e34ec68e3c/MisterV%27s_primary_tomato.png?format=1500w",
+      "url": "https://www.mistervspizzabar.com/",
+      "menu": "https://www.mistervspizzabar.com/#menu",
+      "acceptsReservations": "True"
+    }
+    </script>
+
+    <!-- Tailwind + Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#F8F5F0',
+                        'accent': '#C75B4B',
+                        'dark': '#1a1a1a',
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-primary text-dark font-sans">
+
+    <!-- Header -->
+    <header id="header" class="bg-primary/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="flex-shrink-0">
+                    <img class="h-12 w-auto" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/05356a7d-2dd3-4ba5-9645-69e34ec68e3c/MisterV%27s_primary_tomato.png?format=1500w" alt="Mister V's Pizza Bar Logo">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-dark hover:text-accent transition-colors">About</a>
+                    <a href="#menu" class="text-dark hover:text-accent transition-colors">Menu</a>
+                    <a href="#gallery" class="text-dark hover:text-accent transition-colors">Gallery</a>
+                    <a href="#contact" class="text-dark hover:text-accent transition-colors">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="https://order.toasttab.com/online/mister-v-pizza-bar-444-saw-mill-river-rd" target="_blank" class="bg-accent text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors text-sm font-medium">Order Online</a>
+                    <a href="https://www.opentable.com/r/mister-vs-pizza-bar-reservations-elmsford?restref=1488136&lang=en-US&ot_source=Restaurant%20website" target="_blank" class="bg-dark text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors text-sm font-medium">Reservations</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-dark">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-primary border-t border-gray-200">
+            <a href="#about" class="block py-3 px-4 text-dark hover:bg-gray-200/50">About</a>
+            <a href="#menu" class="block py-3 px-4 text-dark hover:bg-gray-200/50">Menu</a>
+            <a href="#gallery" class="block py-3 px-4 text-dark hover:bg-gray-200/50">Gallery</a>
+            <a href="#contact" class="block py-3 px-4 text-dark hover:bg-gray-200/50">Contact</a>
+            <div class="p-4 border-t border-gray-200/50 space-y-3">
+                <a href="https://order.toasttab.com/online/mister-v-pizza-bar-444-saw-mill-river-rd" target="_blank" class="block w-full text-center bg-accent text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors font-medium">Order Online</a>
+                <a href="https://www.opentable.com/r/mister-vs-pizza-bar-reservations-elmsford?restref=1488136&lang=en-US&ot_source=Restaurant%20website" target="_blank" class="block w-full text-center bg-dark text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors font-medium">Reservations</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white hero-overlay">
+            <img src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/d6c5b930-145e-46df-b0c2-14fc57f17096/Screen+Shot+2025-12-03+at+11.09.46+AM.png" 
+                 alt="Interior of Mister V's Pizza Bar" 
+                 class="absolute inset-0 w-full h-full object-cover"
+                 loading="eager" fetchpriority="high" decoding="async" width="1920" height="1080">
+            <div class="relative z-10 p-4">
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">Raising the Bar on Pizza</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">From the Dom’s legacy, comes an elevated new chapter…</p>
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://order.toasttab.com/online/mister-v-pizza-bar-444-saw-mill-river-rd" target="_blank" class="bg-accent text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-colors font-bold text-lg w-full sm:w-auto">Order Online</a>
+                    <a href="#menu" class="bg-white/20 backdrop-blur-sm text-white px-8 py-3 rounded-md hover:bg-white/30 transition-colors font-bold text-lg w-full sm:w-auto">View Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 lg:py-32 bg-primary">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div class="order-2 md:order-1">
+                        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-dark">Our Story</h2>
+                        <p class="mt-6 text-lg text-gray-700 leading-relaxed">Mister V’s Pizza Bar is a modern Italian restaurant founded by Charlie Vaccaro, carrying forward the legacy of his father's Dom’s Pizza & Pasta. It offers pizza, pasta, and classic dishes in a lively, welcoming atmosphere.</p>
+                        <p class="mt-4 text-lg text-gray-700 leading-relaxed">The menu balances tradition and innovation, with a focus on fresh creations. The intimate pizza bar provides a unique dining experience, fostering conversation and connection. Guests enjoy natural light, upbeat Italian music, and attentive service, making it a joyful and buzzing place where food and memories are created.</p>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/48a69919-866d-484d-89fb-79c431c43706/VAC+FAM.jpg" alt="The Vaccaro Family" class="rounded-lg shadow-xl w-full h-auto object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-20 lg:py-32 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-4xl lg:text-5xl font-bold text-dark">Our Menu</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Balancing tradition and innovation with a focus on fresh creations.</p>
+                </div>
+                <div class="space-y-12">
+                    
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-accent mb-6 border-b-2 border-accent/30 pb-2">Kids Menu</h3>
+                        <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                            <div class="flex justify-between"><p><strong>Personal 8 inch pizza</strong><br><span class="text-sm text-gray-600">with house-made sauce and grande mozzarella</span></p><p class="font-bold text-right pl-4">$10.00</p></div>
+                            <div class="flex justify-between"><p><strong>Add pepperoni</strong></p><p class="font-bold text-right pl-4">$2.00</p></div>
+                            <div class="flex justify-between"><p><strong>Penne Pasta</strong><br><span class="text-sm text-gray-600">Choice of marinara or butter sauce, finished with Parmesan</span></p><p class="font-bold text-right pl-4">$9.00</p></div>
+                            <div class="flex justify-between"><p><strong>Spaghetti & Meatballs</strong><br><span class="text-sm text-gray-600">Spaghetti topped with our house-made beef meatballs and marinara</span></p><p class="font-bold text-right pl-4">$11.00</p></div>
+                            <div class="flex justify-between"><p><strong>Chicken Tenders & Fries</strong><br><span class="text-sm text-gray-600">Crispy chicken tenders served with fries</span></p><p class="font-bold text-right pl-4">$10.00</p></div>
+                            <div class="flex justify-between"><p><strong>Chicken Parmesan</strong><br><span class="text-sm text-gray-600">Crispy chicken cutlet topped with marinara and melted mozzarella, served with spaghetti</span></p><p class="font-bold text-right pl-4">$12.00</p></div>
+                            <div class="flex justify-between"><p><strong>Mac & Cheese Bites</strong><br><span class="text-sm text-gray-600">Crispy mac and cheese bites served with marinara</span></p><p class="font-bold text-right pl-4">$6.00</p></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-accent mb-6 border-b-2 border-accent/30 pb-2">Sides</h3>
+                        <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                            <div class="flex justify-between"><p><strong>French Fries</strong></p><p class="font-bold text-right pl-4">$5.00</p></div>
+                            <div class="flex justify-between"><p><strong>Garlic Knot</strong></p><p class="font-bold text-right pl-4">$5.00</p></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-accent mb-6 border-b-2 border-accent/30 pb-2">Sweet Finish</h3>
+                        <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                            <div class="flex justify-between"><p><strong>Vanilla or Chocolate Gelato Scoop</strong></p><p class="font-bold text-right pl-4">$5.00</p></div>
+                            <div class="flex justify-between"><p><strong>Warm Chocolate Chip Cookie</strong></p><p class="font-bold text-right pl-4">$4.00</p></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-accent mb-6 border-b-2 border-accent/30 pb-2">Wine by the Glass or Bottle</h3>
+                        <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                            <div class="flex justify-between"><p><strong>La Marca Prosecco</strong></p><p class="font-bold text-right pl-4">$12.00 | $40.00</p></div>
+                            <div class="flex justify-between"><p><strong>Whispering Angel Rosé</strong></p><p class="font-bold text-right pl-4">$15.00 | $50.00</p></div>
+                            <div class="flex justify-between"><p><strong>Matua Sauvignon Blanc</strong></p><p class="font-bold text-right pl-4">$12.00 | $32.00</p></div>
+                            <div class="flex justify-between"><p><strong>Cloudy Bay Sauvignon Blanc</strong></p><p class="font-bold text-right pl-4">$17.00 | $60.00</p></div>
+                            <div class="flex justify-between"><p><strong>Giovanni Rosso Barbera d’Alba</strong></p><p class="font-bold text-right pl-4">$13.00 | $44.00</p></div>
+                            <div class="flex justify-between"><p><strong>Santa Margherita Chianti</strong></p><p class="font-bold text-right pl-4">$15.00 | $52.00</p></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-accent mb-6 border-b-2 border-accent/30 pb-2">Beer Options</h3>
+                        <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                            <div class="flex justify-between"><p><strong>Peroni</strong></p><p class="font-bold text-right pl-4">$8.00</p></div>
+                            <div class="flex justify-between"><p><strong>Modelo Especial</strong></p><p class="font-bold text-right pl-4">$7.00</p></div>
+                            <div class="flex justify-between"><p><strong>Michelob Ultra</strong></p><p class="font-bold text-right pl-4">$7.00</p></div>
+                            <div class="flex justify-between"><p><strong>Corona</strong></p><p class="font-bold text-right pl-4">$7.00</p></div>
+                            <div class="flex justify-between"><p><strong>Heineken</strong></p><p class="font-bold text-right pl-4">$7.00</p></div>
+                            <div class="flex justify-between"><p><strong>Guinness</strong></p><p class="font-bold text-right pl-4">$8.00</p></div>
+                            <div class="flex justify-between"><p><strong>Stella Artois</strong></p><p class="font-bold text-right pl-4">$7.00</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 lg:py-32 bg-primary">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-4xl lg:text-5xl font-bold text-dark">Gallery</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">A glimpse into the Mister V's experience.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/559104ea-904d-4df2-8f9d-b9c60ef4f23c/Dom%27s+Img+32.JPG" loading="lazy" alt="Gallery image 1"></div>
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/33bd1084-b9ae-4a4e-a600-d6225c11e251/Dom%27s+Img+54.JPG" loading="lazy" alt="Gallery image 2"></div>
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/e55f64ec-5913-4f84-bfa2-816bb4d6254c/IMG_2629+%281%29.JPEG" loading="lazy" alt="Gallery image 3"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/b41dd5ec-630f-4cea-9908-da73b4db22b4/5A9ADCBC-CA69-4FFB-87B4-7D0A471301C7.jpg" loading="lazy" alt="Gallery image 4"></div>
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/7b15928f-7a65-4633-a69b-408176837832/DSC00744.jpeg" loading="lazy" alt="Gallery image 5"></div>
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/6413d8e1-a40f-43ff-a139-185286451402/DSC00749.jpeg" loading="lazy" alt="Gallery image 6"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/e9efb344-bcc4-4579-9bbf-258030c510ee/DSC00783.jpeg" loading="lazy" alt="Gallery image 7"></div>
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/fffe0fe1-dcc3-4c08-bc7d-2f7cadf079d6/DSC00743.jpeg" loading="lazy" alt="Gallery image 8"></div>
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/72761193-f822-4888-85b7-9f05e82cefb2/Dom%27s+Img+9.JPG" loading="lazy" alt="Gallery image 9"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/3fd41cd7-ec5d-4452-8dce-a233e389fd4e/Dom%27s+12-23+New+Menu+Image+218+copy.JPG" loading="lazy" alt="Gallery image 10"></div>
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/082828fd-0afc-43f4-bc88-acc0cebf4f9f/Dom%27s+12-23+New+Menu+Image+101.JPG" loading="lazy" alt="Gallery image 11"></div>
+                        <div><img class="h-auto max-w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/d66ec1a6-0148-46f0-a1dd-b913875706fe/clem-onojeghuo-QqhL6Pr0XDc-unsplash.jpg" loading="lazy" alt="Gallery image 12"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Hours Section -->
+        <section id="contact" class="py-20 lg:py-32 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+                    <div>
+                        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-dark">Visit Us</h2>
+                        <p class="mt-4 text-lg text-gray-600">We'd love to see you. Find us at the address below or get in touch.</p>
+                        
+                        <div class="mt-8 space-y-4 text-lg">
+                            <p class="flex items-start">
+                                <i data-lucide="map-pin" class="w-6 h-6 mr-3 mt-1 text-accent flex-shrink-0"></i>
+                                <span>444 Saw Mill River Road,<br>Elmsford, NY 10523</span>
+                            </p>
+                            <p class="flex items-center">
+                                <i data-lucide="phone" class="w-6 h-6 mr-3 text-accent"></i>
+                                <a href="tel:914-592-2118" class="hover:text-accent">914-592-2118</a>
+                            </p>
+                            <p class="flex items-center">
+                                <i data-lucide="mail" class="w-6 h-6 mr-3 text-accent"></i>
+                                <a href="mailto:info@mistervspizzabar.com" class="hover:text-accent">info@mistervspizzabar.com</a>
+                            </p>
+                        </div>
+
+                        <div class="mt-8 flex space-x-4">
+                            <a href="http://instagram.com/mistervspizzabar" target="_blank" class="text-gray-500 hover:text-accent"><i data-lucide="instagram" class="w-7 h-7"></i></a>
+                            <a href="https://www.facebook.com/domspizzaelmsford" target="_blank" class="text-gray-500 hover:text-accent"><i data-lucide="facebook" class="w-7 h-7"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-dark mb-4">Hours of Operation</h3>
+                        <ul class="space-y-2 text-lg text-gray-700">
+                            <li class="flex justify-between"><span>Monday</span> <span>10:00 AM - 8:00 PM</span></li>
+                            <li class="flex justify-between"><span>Tuesday</span> <span>10:00 AM - 8:00 PM</span></li>
+                            <li class="flex justify-between"><span>Wednesday</span> <span>10:00 AM - 8:00 PM</span></li>
+                            <li class="flex justify-between"><span>Thursday</span> <span>10:00 AM - 8:00 PM</span></li>
+                            <li class="flex justify-between"><span>Friday</span> <span>10:00 AM - 9:00 PM</span></li>
+                            <li class="flex justify-between"><span>Saturday</span> <span>11:00 AM - 4:00 PM</span></li>
+                            <li class="flex justify-between"><span>Sunday</span> <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-primary/80">
+        <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <img src="https://images.squarespace-cdn.com/content/v1/69305c661f67e30b428beebc/05356a7d-2dd3-4ba5-9645-69e34ec68e3c/MisterV%27s_primary_tomato.png?format=1500w" class="h-10 mr-3" alt="Mister V's Pizza Bar Logo" style="filter: brightness(0) invert(1);">
+                        <span class="self-center text-2xl font-serif whitespace-nowrap text-white">Mister V's Pizza Bar</span>
+                    </a>
+                    <p class="mt-4 text-sm">444 Saw Mill River Road, Elmsford, NY 10523</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-white uppercase">Navigate</h2>
+                        <ul class="text-primary/70">
+                            <li class="mb-4"><a href="#about" class="hover:underline">About</a></li>
+                            <li class="mb-4"><a href="#menu" class="hover:underline">Menu</a></li>
+                            <li class="mb-4"><a href="#gallery" class="hover:underline">Gallery</a></li>
+                            <li><a href="#contact" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-white uppercase">Follow us</h2>
+                        <ul class="text-primary/70">
+                            <li class="mb-4"><a href="http://instagram.com/mistervspizzabar" target="_blank" class="hover:underline">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/domspizzaelmsford" target="_blank" class="hover:underline">Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-white uppercase">Actions</h2>
+                        <ul class="text-primary/70">
+                            <li class="mb-4"><a href="https://order.toasttab.com/online/mister-v-pizza-bar-444-saw-mill-river-rd" target="_blank" class="hover:underline">Order Online</a></li>
+                            <li><a href="https://www.opentable.com/r/mister-vs-pizza-bar-reservations-elmsford?restref=1488136&lang=en-US&ot_source=Restaurant%20website" target="_blank" class="hover:underline">Reservations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-600 sm:mx-auto lg:my-8" />
+            <div class="text-center text-sm text-primary/60">
+                &copy; <span id="year"></span> Mister V's Pizza Bar. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
